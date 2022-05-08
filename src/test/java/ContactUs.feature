@@ -3,7 +3,7 @@ Feature: Contact Us Page Test
     Given navigate to website
     And click on contact us button
     And select subject heading
-    And type email
+    And type email address
     And type order reference
     And type a message
     When click on send button

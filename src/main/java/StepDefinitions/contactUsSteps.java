@@ -1,4 +1,4 @@
-package ContactSteps;
+package StepDefinitions;
 
 import PageObjectModel.contactUsPage;
 import Utilities.Driver;
@@ -33,8 +33,8 @@ public class contactUsSteps {
         contactUsPage.selectFromDropdown();
     }
 
-    @Given("^type email$")
-    public void type_email() throws Throwable {
+    @Given("^type email address$")
+    public void type_email_address() throws Throwable {
         contactUsPage.typeEmail();
     }
 
@@ -56,6 +56,5 @@ public class contactUsSteps {
     @Then("^verify success message$")
     public void verify_success_message() throws Throwable {
         contactUsPage.assertMyMessage();
-
     }
 }
